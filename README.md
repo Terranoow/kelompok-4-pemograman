@@ -1,5 +1,6 @@
 # kelompok-4-pemograman
 # Toko online Alpha Gaming Headset
+  
 # Anggota kelompok
 > Terrano windrianto darmawan (200810102190
 > Kevin Austin Lumbanraja (20081010217)
@@ -12,4 +13,4 @@ Pembelidapat melihat merk dari barang yang kami jual.
 Pembeli dapat mencari terlebih dahulu apakah barang yang mereka cari tersedia atau tidak di toko online kami.
 # Membeli Barang
 Setelah mencari barang yang mereka cari, pembeli dapat langsung membeli barang tersebut.
-![slide_4](https://user-images.githubusercontent.com/96804291/147634517-1883ead0-f07b-45fc-81d5-9cb902429163.jpg)
+
