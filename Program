@@ -1,1 +1,244 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+typedef struct data{
+	char nama_barang[50];
+	char merk_barang[50];
+	double harga_barang;
+	double potongan_harga;
+	double total_pembayaran;
+
+}data_barang; 
+data_barang barang[100];
+
+int main(){
+	double total_pembayaran;
+	double potongan_harga;
+	double harga_barang;
+	int simpan[20];
+	char nama [30], merk [30];
+	int a, i, j, pilih;
+	strcpy(barang[0].nama_barang, "Headset");
+	strcpy(barang[0].merk_barang, "Sony");
+	barang[0].harga_barang = 2200000;
+	
+	strcpy(barang[1].nama_barang, "Headset");
+	strcpy(barang[1].merk_barang, "Fantech");
+	barang[1].harga_barang = 350000;
+	
+	strcpy(barang[2].nama_barang, "Headset");
+	strcpy(barang[2].merk_barang, "Philips");
+	barang[2].harga_barang = 270000;
+	
+	strcpy(barang[3].nama_barang, "Headset");
+	strcpy(barang[3].merk_barang, "Steal Series");
+	barang[3].harga_barang = 3500000;
+	
+	strcpy(barang[4].nama_barang, "Headset");
+	strcpy(barang[4].merk_barang, "Corsair");
+	barang[4].harga_barang = 700000;
+	
+	strcpy(barang[5].nama_barang, "Headset");
+	strcpy(barang[5].merk_barang, "Logitech");
+	barang[5].harga_barang = 800000;
+	
+	strcpy(barang[6].nama_barang, "Headset");
+	strcpy(barang[6].merk_barang, "Seinnheiser");
+	barang[6].harga_barang = 430000;
+	
+	strcpy(barang[7].nama_barang, "Headset");
+	strcpy(barang[7].merk_barang, "Jetex");
+	barang[7].harga_barang = 380000;
+	
+	strcpy(barang[8].nama_barang, "Headset");
+	strcpy(barang[8].merk_barang, "Razer");
+	barang[8].harga_barang = 1150000;
+		
+	strcpy(barang[9].nama_barang, "Headset");
+	strcpy(barang[9].merk_barang, "HyperX");
+	barang[9].harga_barang = 900000;
+	menu();
+}
+//	if(harga_barang >= 500000){
+//		potongan_harga = harga_barang *10/100;
+//		cout <<"potongan_harga" <<potongan_harga << end;
+//	} else if (harga_barang <= 500000){
+//		potongan_harga = harga_barang *5/100;
+//		cout <<"potongan_harga" <<potongan_harga << end;
+//	}
+//	total_harga = potongan_harga;
+//	cout << "Total Harga : " << total_harga << end;
+//	cout << "Input Jumlah Uang : ";
+//	cin >> uang;
+//	kembali uang-total_harga;
+//	cout <<"Kembali : " <<kembali << end;
+	
+void keluar()
+{
+	
+}
+
+void melihat_Data()
+{
+	double total_pembayaran;
+	double potongan_harga;
+	double harga_barang;
+	int simpan[20];
+	char nama [30], merk [30];
+	int a, i, j, pilih;
+	switch(pilih){
+        case 1 :
+            printf("anda memilih Headset Sony\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=2200000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 2 :
+            printf("anda memilih Headset Fantech\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=350000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 3 :
+            printf("anda memilih Headset Philips\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=270000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 4 :
+            printf("anda memilih Steal Series\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=3500000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 5 :
+            printf("anda memilih Headset Crosair\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=700000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 6 :
+            printf("anda memilih Headset Logitech \n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=800000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+    	case 7 :
+            printf("anda memilih Headset Seinnheiser\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=430000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 8 :
+            printf("anda memilih Headset Jetex\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=380000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 9 :
+        	printf("anda memilih Headset Razer");
+        	printf("masukkan potongan harga yang anda dapatkan");
+        	scanf("%d, &potongan_harga");
+        	harga_barang = 1150000;
+        	total_pembayaran = harga_barang-potongan_harga;
+        	printf("Total Pembayaran\t: %d, total");
+        	printf("\n===============================\n");
+        	break;
+        case 10 :
+            printf("anda memilih Headset HyperX\n");
+            printf("masukkan potongan harga yang anda dapet\t");
+            scanf("%d,&potongan_harga");
+            harga_barang=900000;
+            total_pembayaran = harga_barang-potongan_harga;
+            printf("Total Pembayaran\t: %d,total");
+            printf("\n================================\n");
+            break;
+        case 0 :
+            keluar();
+            break;
+        default :
+            printf("Pilihan Tidak Ada. Silahkan Pilih Ulang\n\n");
+        menu();
+    }
+	
+}
+
+void jumpSearch()
+{
+	
+}
+
+void InterpolationSearch()
+{
+	
+}
+
+
+void menu()
+{
+	char melihat_data[100];
+	char jumpsearch[100];
+	char interpolationSearch[100];
+	double total_pembayaran;
+	double potongan_harga;
+	double harga_barang;
+		
+	int pilih;
+	printf ("===PILIHAN MENU===\n");
+    printf("1. Melihat Data\n");
+    printf("2. Mencari Data Dengan JumpSearch\n");
+    printf("3. Mencari Data Dengan InterpolationSearch\n");
+    printf("4. Keluar Program\n");
+
+    printf("Silahkan memilih pilihan anda : "); scanf("%d",& pilih);
+    printf("\n");
+    
+switch(pilih)
+	{		
+		case 1 :
+			melihat_Data();
+			break;
+		case 2 :
+			jumpSearch();
+			break;
+		case 3 :
+			InterpolationSearch();
+			break;
+		case 4 :
+			keluar();
+			break;			
+		default :
+			printf("Pilihan Tidak Ada. Silahkan Pilih Ulang\n\n");
+		menu();		
+	}
+
+
+return 0;
+} 
 
