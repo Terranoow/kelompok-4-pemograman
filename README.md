@@ -1,6 +1,6 @@
 # kelompok-4-pemograman
 # Toko online Alpha Gaming Headset
-[Uploading WhatsApp Image 2021-12-29 at 14.43.29.jpeg…]()
+[WhatsApp Image 2021-12-29 at 14 43 29](https://user-images.githubusercontent.com/96804291/147638835-fe204fca-01b0-4e4b-97bc-03e26e8615bb.jpeg)
 # Anggota kelompok
 > Terrano windrianto darmawan (200810102190
 > Kevin Austin Lumbanraja (20081010217)
